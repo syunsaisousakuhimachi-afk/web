@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
        TOPへ戻るボタン
     ========================== */
 
+   const topBtn = document.getElementById("topBtn");
+   
    if(topBtn){
 
     window.addEventListener("scroll",()=>{
@@ -69,6 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ========================== */
 
     const header=document.querySelector("header");
+
+   if(header){
 
     window.addEventListener("scroll",()=>{
 
@@ -136,6 +140,4 @@ if(call){
 }
 
     });
-
-});
 
