@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
+    
 <head>
-
 <meta charset="UTF-8">
 
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>旬彩創作ひまち</title>
+
+<meta name="description"
+content="...">
+
 <link rel="stylesheet" href="style.css">
-
 </head>
-
-    <title>旬彩創作ひまち | 愛媛県新居浜市の創作和食居酒屋</title>
-
-    <meta name="description" content="愛媛県新居浜市泉宮町にある旬彩創作ひまち。新鮮な魚介や旬の食材を使った創作和食をお楽しみください。">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
 
 <header>
@@ -239,7 +238,7 @@ loading="lazy">
 
 <a class="call-button"
 
-href="tel:0897XXXXXXXX">
+href="tel:0897668755"
 
 📞 今すぐ電話する
 
@@ -289,7 +288,8 @@ href="tel:0897XXXXXXXX">
 <script src="script.js"></script>
 
 </body>
-</html>
+
+<styie.css>
 
 /* ===========================
    SHUNSAI HIMACHI
@@ -508,3 +508,5 @@ INSTAGRAM
 
 #instagram{
     text-align:center;
+    padding:80px 10%;
+}
