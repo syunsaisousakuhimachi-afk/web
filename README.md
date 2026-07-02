@@ -978,7 +978,9 @@ INSTAGRAM
 #instagram{
 
     text-align:center;
+｝
 
+｛
     background:#181818;
 
 }
