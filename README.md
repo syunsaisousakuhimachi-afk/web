@@ -48,10 +48,9 @@
 創作和食居酒屋
 </p>
 
-<a class="reserve-btn" href="tel:0897XXXXXXXX">
+<a class="reserve-btn" href="tel:0897668755">
 📞 電話予約はこちら
 </a>
-
 </div>
 
 </section>
