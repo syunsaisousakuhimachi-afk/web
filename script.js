@@ -42,19 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
        TOPへ戻るボタン
     ========================== */
 
-    const topBtn = document.getElementById("topBtn");
+   if(topBtn){
 
     window.addEventListener("scroll",()=>{
 
-        if(window.scrollY > 300){
-
-            topBtn.style.display="block";
-
-        }else{
-
-            topBtn.style.display="none";
-
-        }
+        topBtn.style.display =
+            window.scrollY > 300 ? "block":"none";
 
     });
 
@@ -63,15 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollTo({
 
             top:0,
-
             behavior:"smooth"
 
         });
 
     });
 
-
-
+}
 
     /* ==========================
        ヘッダー背景変更
@@ -98,54 +89,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ==========================
-       メニューカードアニメーション
-    ========================== */
+  
 
-    const cards=document.querySelectorAll(".menu-card");
-
-    cards.forEach(card=>{
-
-        card.addEventListener("mouseenter",()=>{
-
-            card.style.transform="translateY(-10px)";
-
-        });
-
-        card.addEventListener("mouseleave",()=>{
-
-            card.style.transform="translateY(0px)";
-
-        });
-
-    });
-
-
-
-
-    /* ==========================
-       コースカード
-    ========================== */
-
-    const course=document.querySelectorAll(".course-card");
-
-    course.forEach(item=>{
-
-        item.addEventListener("mouseenter",()=>{
-
-            item.style.transform="scale(1.03)";
-
-        });
-
-        item.addEventListener("mouseleave",()=>{
-
-            item.style.transform="scale(1)";
-
-        });
-
-    });
-
-
+    
 
 
     /* ==========================
@@ -158,8 +104,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         photo.addEventListener("click",()=>{
 
-            window.open(photo.src);
-
+           window.open(photo.src, "_blank");
+           
         });
 
     });
@@ -171,7 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
        電話ボタン
     ========================== */
 
-    const call=document.querySelector(".call-button");
+  const call = document.querySelector(".call-button");
+
+if(call){
 
     call.addEventListener("mouseenter",()=>{
 
@@ -182,6 +130,10 @@ document.addEventListener("DOMContentLoaded", () => {
     call.addEventListener("mouseleave",()=>{
 
         call.style.opacity="1";
+
+    });
+
+}
 
     });
 
