@@ -286,3 +286,221 @@ href="tel:0897XXXXXXXX">
 
 </body>
 </html>
+
+/* ===========================
+   SHUNSAI HIMACHI
+   style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;
+    background:#111;
+    color:#fff;
+    line-height:1.8;
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,.9);
+    backdrop-filter:blur(8px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    z-index:999;
+    border-bottom:1px solid rgba(255,215,0,.25);
+}
+
+.logo h1{
+    color:#d4af37;
+    font-size:32px;
+    letter-spacing:3px;
+}
+
+.logo p{
+    color:#ddd;
+    font-size:13px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* ===========================
+HERO
+=========================== */
+
+.hero{
+    height:100vh;
+    background:url(images/hero.jpg) center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.overlay{
+    position:relative;
+    z-index:2;
+}
+
+.overlay h2{
+    font-size:60px;
+    margin-bottom:20px;
+    letter-spacing:6px;
+}
+
+.overlay p{
+    font-size:20px;
+    color:#ddd;
+    margin-bottom:35px;
+}
+
+.reserve-btn{
+    display:inline-block;
+    padding:16px 45px;
+    background:#d4af37;
+    color:#111;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.reserve-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(212,175,55,.35);
+}
+
+/* ===========================
+SECTION
+=========================== */
+
+section{
+    padding:100px 10%;
+}
+
+section h2{
+    font-size:42px;
+    color:#d4af37;
+    margin-bottom:35px;
+    text-align:center;
+}
+
+section p{
+    font-size:17px;
+    color:#ddd;
+}
+
+/* ===========================
+ABOUT
+=========================== */
+
+#about{
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+}
+
+/* ===========================
+MENU
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+}
+
+.card{
+    background:#1b1b1b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+    border:1px solid rgba(212,175,55,.25);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:20px;
+    color:#d4af37;
+}
+
+.card p{
+    padding:0 20px 25px;
+}
+
+/* ===========================
+COURSE
+=========================== */
+
+.course{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.course div{
+    background:#191919;
+    padding:35px;
+    border-left:5px solid #d4af37;
+    border-radius:12px;
+}
+
+.course h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+/* ===========================
+INSTAGRAM
+=========================== */
+
+#instagram{
+    text-align:center;
